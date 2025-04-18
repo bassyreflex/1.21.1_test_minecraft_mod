@@ -14,6 +14,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> SUPERITE = ITEMS.register("superite",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_SUPERITE = ITEMS.register("raw_superite",
+            () -> new Item(new Item.Properties()));
 
 
 
