@@ -1,5 +1,9 @@
 {
   "item.tutorialmod.superite": "Superite Ingot",
-  "item.tutorialmod.raw_superite": "Raw Superite"
+  "item.tutorialmod.raw_superite": "Raw Superite",
+
+
+  "block.tutorialmod.superite_block": "Block of Superite",
+  "block.tutorialmod.raw_superite_block": "Block of Raw Superite"
 
 }
