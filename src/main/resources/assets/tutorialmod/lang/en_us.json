@@ -5,6 +5,8 @@
 
   "block.tutorialmod.superite_block": "Block of Superite",
   "block.tutorialmod.raw_superite_block": "Block of Raw Superite",
+  "block.tutorialmod.superite_ore": "Superite Ore",
+  "block.tutorialmod.superite_deepslate_ore": "Deepslate Superite Ore",
 
   "creativetab.tutorialmod.superite_items": "Superite Items",
   "creativetab.tutorialmod.superite_blocks": "Superite Blocks"

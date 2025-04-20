@@ -34,6 +34,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SUPERITE_BLOCK.get());
                         output.accept(ModBlocks.RAW_SUPERITE_BLOCK.get());
 
+                        output.accept(ModBlocks.SUPERITE_ORE.get());
+                        output.accept(ModBlocks.SUPERITE_DEEPSLATE_ORE.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus){

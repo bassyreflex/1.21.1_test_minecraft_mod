@@ -2,9 +2,11 @@ package com.nathan.tutorialmod.block;
 
 import com.nathan.tutorialmod.TutorialMod;
 import com.nathan.tutorialmod.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -29,6 +31,19 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3F)
                     .requiresCorrectToolForDrops()));
+
+    public static final  RegistryObject<Block> SUPERITE_ORE = registerBlock("superite_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2 ,4), BlockBehaviour.Properties.of()
+                    .strength(4F)
+                    .requiresCorrectToolForDrops()));
+
+    public static final  RegistryObject<Block> SUPERITE_DEEPSLATE_ORE = registerBlock("superite_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3 ,6), BlockBehaviour.Properties.of()
+                    .strength(5F)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)));
+
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
