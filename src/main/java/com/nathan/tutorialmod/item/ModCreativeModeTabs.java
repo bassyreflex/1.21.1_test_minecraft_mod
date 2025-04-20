@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SUPERITE.get());
                         output.accept(ModItems.RAW_SUPERITE.get());
+                        output.accept(ModItems.CHISEL.get());
 
                     }).build());
 
