@@ -1,0 +1,6 @@
+// 1.21	2025-04-21T19:25:30.5259836	Loot Tables
+8cadd73280b5040d1e510cad246834ca39b6b62f data/tutorialmod/loot_table/blocks/magic_block.json
+9e2c946ca9085000cac75f42de255748814f7d7e data/tutorialmod/loot_table/blocks/raw_superite_block.json
+d32440bebbdded61ce7e6e041d6e26840bfa9c37 data/tutorialmod/loot_table/blocks/superite_block.json
+836ee23cc2cf4e28eec22265270278d1b502b528 data/tutorialmod/loot_table/blocks/superite_deepslate_ore.json
+2f30cae9b5ac2e5f1c6b77160c60c0e4f62dcff3 data/tutorialmod/loot_table/blocks/superite_ore.json

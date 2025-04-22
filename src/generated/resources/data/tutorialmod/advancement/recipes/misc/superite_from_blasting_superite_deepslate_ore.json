@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_superite_deepslate_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:superite_deepslate_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tutorialmod:superite_from_blasting_superite_deepslate_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_superite_deepslate_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tutorialmod:superite_from_blasting_superite_deepslate_ore"
+    ]
+  }
+}

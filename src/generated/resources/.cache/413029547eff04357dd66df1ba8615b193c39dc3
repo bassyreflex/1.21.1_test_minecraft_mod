@@ -1,0 +1,11 @@
+// 1.21	2025-04-21T19:36:02.4099972	Block States: tutorialmod
+ed27aaa00c275028e1495bb6d6bfdcea1851067b assets/tutorialmod/models/block/magic_block.json
+70f79331516f54f854955932050b4faeb9b75c90 assets/tutorialmod/models/block/raw_superite_block.json
+93d4c6db77a979b740d19b8ffafed833df66e1b6 assets/tutorialmod/models/block/superite_block.json
+136caae00869ea56851290ec5c6721002af3e442 assets/tutorialmod/models/block/superite_deepslate_ore.json
+92a2975524fb0475abf39377b46fca30e7e3e4fc assets/tutorialmod/models/block/superite_ore.json
+db3c7fd404543728f8b989bee0ca68018dac6e79 assets/tutorialmod/models/item/magic_block.json
+ef5d9bf9230d10a0351bf64782250514b2688c74 assets/tutorialmod/models/item/raw_superite_block.json
+11fb398d07de183c1f04832ad14e66c6cb56a7a6 assets/tutorialmod/models/item/superite_block.json
+ff81cb5b622e9a35b0c67ff71be3170d2f3c89b5 assets/tutorialmod/models/item/superite_deepslate_ore.json
+e489f84c3a22038571c5b7fbba7280d66d53f31e assets/tutorialmod/models/item/superite_ore.json
