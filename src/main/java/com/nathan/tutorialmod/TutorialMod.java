@@ -2,6 +2,7 @@ package com.nathan.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import com.nathan.tutorialmod.block.ModBlocks;
+import com.nathan.tutorialmod.component.ModDataComponentTypes;
 import com.nathan.tutorialmod.item.ModCreativeModeTabs;
 import com.nathan.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -40,6 +41,7 @@ public class TutorialMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModDataComponentTypes.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -54,6 +56,9 @@ public class TutorialMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept(ModItems.SUPERITE_SWORD);
+        }
         if(event.getTabKey()== CreativeModeTabs.INGREDIENTS){
             event.accept((ModItems.SUPERITE));
             event.accept((ModItems.RAW_SUPERITE));

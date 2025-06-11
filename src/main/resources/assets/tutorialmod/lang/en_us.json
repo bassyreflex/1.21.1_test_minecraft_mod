@@ -2,8 +2,11 @@
   "item.tutorialmod.superite": "Superite Ingot",
   "item.tutorialmod.raw_superite": "Raw Superite",
   "item.tutorialmod.chisel": "Chisel",
+  "item.tutorialmod.tnt_launcher": "Tnt Gun",
   "item.tutorialmod.kohlrabi": "Kohlrabi",
   "item.tutorialmod.aurora_ashes": "Aurora Ashes",
+
+  "item.tutorialmod.superite_sword": "Superite Sword",
 
 
   "block.tutorialmod.superite_block": "Block of Superite",

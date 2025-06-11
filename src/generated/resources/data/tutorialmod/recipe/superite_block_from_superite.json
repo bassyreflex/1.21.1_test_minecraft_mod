@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "tutorialmod:superite_block"
+    },
+    {
+      "item": "tutorialmod:superite_block"
+    },
+    {
+      "item": "tutorialmod:superite_block"
+    },
+    {
+      "item": "tutorialmod:superite_block"
+    },
+    {
+      "item": "tutorialmod:superite_block"
+    },
+    {
+      "item": "tutorialmod:superite_block"
+    },
+    {
+      "item": "tutorialmod:superite_block"
+    },
+    {
+      "item": "tutorialmod:superite_block"
+    },
+    {
+      "item": "tutorialmod:superite_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:superite"
+  }
+}
