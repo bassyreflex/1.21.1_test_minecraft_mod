@@ -32,9 +32,17 @@ public class LoggerItem extends DiggerItem {
 
         // Directions for adjacency (6 directions for cubic blocks)
         BlockPos[] directions = new BlockPos[]{
-                new BlockPos(1, 0, 0), new BlockPos(-1, 0, 0),
-                new BlockPos(0, 1, 0), new BlockPos(0, -1, 0),
-                new BlockPos(0, 0, 1), new BlockPos(0, 0, -1)
+                new BlockPos(-1, -1, -1), new BlockPos(-1, -1, 0), new BlockPos(-1, -1, 1),
+                new BlockPos(0, -1, -1), new BlockPos(0, -1, 0), new BlockPos(0, -1, 1),
+                new BlockPos(1, -1, -1), new BlockPos(1, -1, 0), new BlockPos(1, -1, 1),
+
+                new BlockPos(-1, 0, -1), new BlockPos(-1, 0, 0), new BlockPos(-1, 0, 1),
+                new BlockPos(0, 0, -1),             /* Exclude (0, 0, 0) */ new BlockPos(0, 0, 1),
+                new BlockPos(1, 0, -1), new BlockPos(1, 0, 0), new BlockPos(1, 0, 1),
+
+                new BlockPos(-1, 1, -1), new BlockPos(-1, 1, 0), new BlockPos(-1, 1, 1),
+                new BlockPos(0, 1, -1), new BlockPos(0, 1, 0), new BlockPos(0, 1, 1),
+                new BlockPos(1, 1, -1), new BlockPos(1, 1, 0), new BlockPos(1, 1, 1)
         };
 
         // BFS loop
