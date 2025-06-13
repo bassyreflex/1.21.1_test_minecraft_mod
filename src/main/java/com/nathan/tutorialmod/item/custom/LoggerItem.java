@@ -63,12 +63,7 @@ public class LoggerItem extends DiggerItem {
 
     private static boolean isWood(BlockState state) {
         // Check if the block is a wood block
-        return state.getBlock().defaultBlockState().is(Blocks.OAK_LOG) || // Replace/add other wood blocks here
-                state.getBlock().defaultBlockState().is(Blocks.SPRUCE_LOG) ||
-                state.getBlock().defaultBlockState().is(Blocks.BIRCH_LOG) ||
-                state.getBlock().defaultBlockState().is(Blocks.JUNGLE_LOG) ||
-                state.getBlock().defaultBlockState().is(Blocks.ACACIA_LOG) ||
-                state.getBlock().defaultBlockState().is(Blocks.DARK_OAK_LOG);
+        return state.getBlock().defaultBlockState().is(BlockTags.LOGS);
     }
 }
 
