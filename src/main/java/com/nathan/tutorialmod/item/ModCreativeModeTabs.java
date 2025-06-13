@@ -43,6 +43,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SUPERITE_DEEPSLATE_ORE.get());
 
                         output.accept(ModBlocks.MAGIC_BLOCK.get());
+                        output.accept(ModBlocks.FLASHBANG_LAMP.get());
 
                     }).build());
 

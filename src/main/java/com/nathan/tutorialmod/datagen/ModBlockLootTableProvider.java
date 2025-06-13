@@ -33,6 +33,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.SUPERITE_BLOCK.get());
         dropSelf(ModBlocks.RAW_SUPERITE_BLOCK.get());
         dropSelf(ModBlocks.MAGIC_BLOCK.get());
+        dropSelf(ModBlocks.FLASHBANG_LAMP.get());
 
         this.add(ModBlocks.SUPERITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.SUPERITE_ORE.get(), ModItems.RAW_SUPERITE.get()));

@@ -1,6 +1,7 @@
 package com.nathan.tutorialmod.block;
 
 import com.nathan.tutorialmod.TutorialMod;
+import com.nathan.tutorialmod.block.custom.FlashBangLampBlock;
 import com.nathan.tutorialmod.block.custom.MagicBlock;
 import com.nathan.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -49,6 +50,10 @@ public class ModBlocks {
                     .strength(10F)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.AMETHYST_CLUSTER)));
+
+    public static final RegistryObject<Block> FLASHBANG_LAMP = registerBlock("flashbang_lamp",
+            () -> new FlashBangLampBlock(BlockBehaviour.Properties.of().strength(4f)
+                    .lightLevel(state -> state.getValue(FlashBangLampBlock.CLICKED) ? 30 : 0)));
 
 
 
