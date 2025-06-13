@@ -2,6 +2,7 @@ package com.nathan.tutorialmod.datagen;
 
 import com.nathan.tutorialmod.TutorialMod;
 import com.nathan.tutorialmod.block.ModBlocks;
+import com.nathan.tutorialmod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -28,5 +29,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.SUPERITE_ORE.get())
                 .add(ModBlocks.SUPERITE_DEEPSLATE_ORE.get());
+
+        tag(ModTags.Blocks.NEEDS_SUPERITE_TOOL)
+                .add(ModBlocks.SUPERITE_BLOCK.get());
     }
 }

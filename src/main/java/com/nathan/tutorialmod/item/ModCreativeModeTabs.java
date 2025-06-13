@@ -45,6 +45,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MAGIC_BLOCK.get());
                         output.accept(ModBlocks.FLASHBANG_LAMP.get());
 
+                        output.accept(ModItems.LOGGER_AXE.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus){

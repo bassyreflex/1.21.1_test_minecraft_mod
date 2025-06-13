@@ -25,6 +25,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.TNT_LAUNCHER.get());
 
         handheldItem(ModItems.SUPERITE_SWORD);
+        handheldItem(ModItems.LOGGER_AXE);
 
     }
 

@@ -3,16 +3,20 @@ package com.nathan.tutorialmod.item;
 import com.nathan.tutorialmod.TutorialMod;
 import com.nathan.tutorialmod.block.custom.FuelItem;
 import com.nathan.tutorialmod.item.custom.ChiselItem;
+import com.nathan.tutorialmod.item.custom.LoggerItem;
 import com.nathan.tutorialmod.item.custom.ModToolTiers;
 import com.nathan.tutorialmod.item.custom.TntLauncherItem;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.component.ChargedProjectiles;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jline.utils.Log;
 
 public class ModItems {
 
@@ -38,7 +42,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> SUPERITE_SWORD = ITEMS.register("superite_sword",
             () -> new SwordItem(ModToolTiers.SUPERITE, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(ModToolTiers.SUPERITE, 12, -1.5F))));
+                    .attributes(SwordItem.createAttributes(ModToolTiers.SUPERITE, 30, -3.5F))));
+
+    public static final RegistryObject<Item> LOGGER_AXE = ITEMS.register("logger_axe",
+            () -> new LoggerItem(ModToolTiers.SUPERITE, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.SUPERITE, 4F, -1F))));
 
 
     public static void register(IEventBus eventBus){
