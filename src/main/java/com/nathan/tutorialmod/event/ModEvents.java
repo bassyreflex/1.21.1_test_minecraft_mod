@@ -11,7 +11,9 @@ import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Mod.EventBusSubscriber(modid = TutorialMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
@@ -30,14 +32,20 @@ public class ModEvents {
                 return;
             }
             if (event.getLevel() instanceof Level level) {
-                for (BlockPos pos : LoggerItem.findTreeBlocks(level, initialBlockPos)) {
-                    if (pos == initialBlockPos || !logger.isCorrectToolForDrops(mainHandItem, event.getLevel().getBlockState(pos))) {
-                        continue;
-                    }
+                List<BlockPos> treeBlocks = LoggerItem.findTreeBlocks(level, initialBlockPos);
+                if (treeBlocks.isEmpty()){
+                    return;
+                }
+                else{
+                    for (BlockPos pos : treeBlocks) {
+                        if (pos == initialBlockPos || !logger.isCorrectToolForDrops(mainHandItem, event.getLevel().getBlockState(pos))) {
+                            continue;
+                        }
 
-                    HARVESTED_BLOCKS.add(pos);
-                    serverPlayer.gameMode.destroyBlock(pos);
-                    HARVESTED_BLOCKS.remove(pos);
+                        HARVESTED_BLOCKS.add(pos);
+                        serverPlayer.gameMode.destroyBlock(pos);
+                        HARVESTED_BLOCKS.remove(pos);
+                    }
                 }
             }
         }

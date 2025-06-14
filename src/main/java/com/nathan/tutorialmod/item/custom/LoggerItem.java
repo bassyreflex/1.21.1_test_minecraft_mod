@@ -26,6 +26,7 @@ public class LoggerItem extends DiggerItem {
         List<BlockPos> treeBlocks = new ArrayList<>();
         Set<BlockPos> visited = new HashSet<>();
         Queue<BlockPos> toVisit = new LinkedList<>();
+        boolean leafAdjacent = false;
 
         // Add starting position
         toVisit.add(startPos);
@@ -53,7 +54,7 @@ public class LoggerItem extends DiggerItem {
 
                 // Check if the block at the current position is wood
                 BlockState state = level.getBlockState(currentPos);
-                if (isWood(state)) {
+                if (state.getBlock().defaultBlockState().is(BlockTags.LOGS)) {
                     treeBlocks.add(currentPos);
 
                     // Add all adjacent blocks to the queue
@@ -64,15 +65,21 @@ public class LoggerItem extends DiggerItem {
                         }
                     }
                 }
+                else if(state.getBlock().defaultBlockState().is(BlockTags.LEAVES)){
+                    leafAdjacent = true;
+                }
             }
         }
-        return treeBlocks;
+        if (leafAdjacent){
+            return treeBlocks;
+        }
+        else{
+            return new ArrayList<>();
+        }
+
+
     }
 
-    private static boolean isWood(BlockState state) {
-        // Check if the block is a wood block
-        return state.getBlock().defaultBlockState().is(BlockTags.LOGS);
-    }
 }
 
 
